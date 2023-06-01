@@ -1,0 +1,17 @@
+---
+- name: Install Vim and Zip packages
+  apt:
+    name: 
+      - vim
+      - zip
+    state: present
+  when: ansible_distribution == 'Ubuntu'  # Adjust based on your target server distribution
+
+- name: Install Vim and Zip packages
+  yum:
+    name: 
+      - vim
+      - zip
+    state: present
+  when: ansible_distribution == 'CentOS'  # Adjust based on your target server distribution
+

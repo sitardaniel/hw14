@@ -1,0 +1,6 @@
+---
+- name: Apply common role to servers
+  hosts: servers
+  roles:
+    - common
+
